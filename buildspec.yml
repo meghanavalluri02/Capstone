@@ -14,7 +14,7 @@ phases:
       - echo Logging in to Amazon ECR...
       - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 156041402660.dkr.ecr.us-east-1.amazonaws.com
       - IMAGE_TAG=latest
-      - ECR_REPO=156041402660.dkr.ecr.us-east-1.amazonaws.com/capstone-ecr
+      - ECR_REPO=156041402660.dkr.ecr.us-east-1.amazonaws.com/capstone
  
   build:
     commands:
